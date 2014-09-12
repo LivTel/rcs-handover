@@ -1,0 +1,35 @@
+The following packages are included in the RCS deployment:-
+
+ngat/rcs
+ngat/rcs/calib
+ngat/rcs/calib/test
+ngat/rcs/comms
+ngat/rcs/comms/test
+ngat/rcs/control
+ngat/rcs/emm*
+ngat/rcs/ers
+ngat/rcs/ers/test
+ngat/rcs/iss
+ngat/rcs/iss/test
+ngat/rcs/newstatemodel
+ngat/rcs/newstatemodel/test
+ngat/rcs/oldscience*
+ngat/rcs/oldstatemodel*
+ngat/rcs/ops
+ngat/rcs/pos*
+ngat/rcs/sciops
+ngat/rcs/scm
+ngat/rcs/scm/collation
+ngat/rcs/scm/detection
+ngat/rcs/scm/test
+ngat/rcs/telemetry
+ngat/rcs/test
+ngat/rcs/tms
+ngat/rcs/tms/events
+ngat/rcs/tms/executive
+ngat/rcs/tms/manager
+ngat/rcs/tms/test
+ngat/rcs/tocs
+
+
+(those marked * are defunct or nearly so)

@@ -1,0 +1,28 @@
+The Robotic Control System is made up from a number of sub-systems. These commminuicate via RMI, though historically a custom asynchronous messaging system was used. Each subsystem has a logger associated with it, typically these log to a file (or series of hourly files) named rcs_sys.txt. Each sub-system also provides one or more telemetry streams which can be accessed by external clients - eg OpsUI. The telemetry feeds are often the mechanism other internal sub-systems use to obtain information from the sub-system.
+
+\subsection{TCM}
+The Telescope Control and Monitoring sub-system provides a model of the telescope's actual physical systems, information about capabilities and a hook to attach telemtry listeners to.
+
+\subsection{ICM}
+The Instrument Control and Monitoring sub-system provides information about the instruments attached to the telescope and provides hooks to attach telemetry listeners to.
+
+\subsection{EMS}
+The Envionmental Monitoring System provides information about sky conditions (seeing and photometricity) and the weather environment.
+
+\subsection{ERS}
+The Environmental Reactive System filters information received from the various lower level feeds, subjects these to various criteria then uses this to trigger a hierarchy of rules. Top-level rule triggers are used to notify environmental changes to the State Model.
+
+\subsection{Ops}
+The Operations sub-system contains the State Model and the Operations Manager. The State Model reacts to environmental changes signalled from the ERS and modifies a set of maintained State Variables. The at regular intervals the state variables are used to make decisions on operational actions. These actions are implemented by the Operations Manager via the TMS. 
+
+\subsection{TMS}
+The Task Managment System implements the various operational actions such as starting up the telescope, opening the enclosure and performing observations. It is a hierachic system made up from a number of managed tasks with a high degree of parallelism.
+
+\subsection{ISS}
+The Instrument Support System handles requests from the instruments to perform various actions on the telescope such as making offsets. It also supplies information (e.g. FITS headers) to the instruments on request. 
+
+\subsection{SMS}
+The Scheduling Managment System is a fairly complex system in itself and not strictly part of the RCS, however it is convenient to treat is as such as it receives direct communications from the TMS and obtains feeds from TCM, ICM and EMS.
+
+
+

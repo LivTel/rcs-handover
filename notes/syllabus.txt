@@ -1,0 +1,16 @@
+Robotic Control System - Level 1
+
+1. (Mon 04 Aug) Top level overview of RCS and its place in the overall system, comms.
+
+2. (Mon 11 Aug) High level sub-systems: Introduction, messaging, ERS, TMS, state model.
+
+3. (Tue 09 Sep) Low level sub-systems: TCM, ICM, EMS, ISS.
+
+4. (Mon 29 Sep) Configuration, startup, deployment.
+
+5. (Mon 06 Oct) Telemetry: architecture, OpsUI, live status.
+
+6. (Mon 13 Oct) Scheduling system.
+
+7. (Mon 20 Oct) Subsidiary interfaces: NSO, TEA, TOCS.
+
