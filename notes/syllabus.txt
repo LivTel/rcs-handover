@@ -6,9 +6,9 @@ Robotic Control System - Level 1
 
 3. (Tue 09 Sep) Low level sub-systems: TCM, ICM, EMS, ISS.
 
-4. (Mon 29 Sep) Configuration, startup, deployment.
+4. (Tue 23 Sep) Configuration, startup, deployment.
 
-5. (Mon 06 Oct) Telemetry: architecture, OpsUI, live status.
+5. (Mon 29 Sep) Telemetry: architecture, OpsUI, live status.
 
 6. (Mon 13 Oct) Scheduling system.
 
