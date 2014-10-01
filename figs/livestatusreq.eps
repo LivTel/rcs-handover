@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0 EPSF-2.0
 %%Title: livestatusreq.fig
 %%Creator: fig2dev Version 3.2 Patchlevel 4
-%%CreationDate: Fri Sep 26 13:04:31 2014
+%%CreationDate: Wed Oct  1 10:45:36 2014
 %%For: snf@localhost.localdomain (Esteban)
 %%BoundingBox: 0 0 717 533
 %%Magnification: 1.0000
@@ -148,6 +148,9 @@ n 11100 8550 m 10875 9375 l 12000 9375 l 12225 8550 l
 % Polyline
 n 10275 7500 m 10050 8325 l 11175 8325 l 11400 7500 l
  10275 7500 l  cp gs col7 1.00 shd ef gr gs col-1 s gr 
+% Polyline
+n 5537 8250 m 5100 9075 l 7287 9075 l 7725 8250 l
+ 5537 8250 l  cp gs col7 1.00 shd ef gr gs col-1 s gr 
 % here ends figure;
 % 
 % here starts figure with depth 50
@@ -368,6 +371,45 @@ n 10380 2400 m 10275 2400 10275 2745 105 arcto 4 {pop} repeat
 % Polyline
 n 9675 3975 m 12000 3975 l 12000 5400 l 9675 5400 l
  cp gs col11 1.00 shd ef gr gs col0 s gr 
+% Polyline
+gs  clippath
+11595 8565 m 11655 8565 l 11655 8414 l 11625 8534 l 11595 8414 l cp
+eoclip
+n 11625 5400 m
+ 11625 8550 l gs col11 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+n 11595 8414 m 11625 8534 l 11655 8414 l 11595 8414 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+n 5700 6675 m 7200 6675 l 7200 7575 l 5700 7575 l
+ cp gs col11 1.00 shd ef gr gs col0 s gr 
+% Polyline
+gs  clippath
+6570 8265 m 6630 8265 l 6630 8114 l 6600 8234 l 6570 8114 l cp
+eoclip
+n 6600 7575 m
+ 6600 8250 l gs col11 1.00 shd ef gr gs col0 s gr gr
+
+% arrowhead
+n 6570 8114 m 6600 8234 l 6630 8114 l 6570 8114 l  cp gs 0.00 setgray ef gr  col0 s
+% Polyline
+gs  clippath
+3911 4243 m 3867 4284 l 3971 4395 l 3911 4287 l 4014 4354 l cp
+eoclip
+n 6150 6675 m
+ 3900 4275 l gs col-1 s gr gr
+
+% arrowhead
+n 4014 4354 m 3911 4287 l 3971 4395 l 4014 4354 l  cp gs 0.00 setgray ef gr  col-1 s
+% Polyline
+gs  clippath
+5688 6631 m 5732 6590 l 5629 6479 l 5689 6588 l 5585 6520 l cp
+eoclip
+n 3825 4575 m
+ 5700 6600 l gs col-1 s gr gr
+
+% arrowhead
+n 5585 6520 m 5689 6588 l 5629 6479 l 5585 6520 l  cp gs 0.00 setgray ef gr  col-1 s
 /Times-Bold ff 180.00 scf sf
 5850 4350 m
 gs 1 -1 sc (LiveDataFeed) col0 sh gr
@@ -417,9 +459,6 @@ gs 1 -1 sc (Mech.dat) col0 sh gr
 10425 7950 m
 gs 1 -1 sc (IOO.dat) col0 sh gr
 /Times-Bold ff 180.00 scf sf
-10200 6000 m
-gs 1 -1 sc (write status to csv file) col0 sh gr
-/Times-Bold ff 180.00 scf sf
 10425 2700 m
 gs 1 -1 sc (EMS svc) col0 sh gr
 /Times-Bold ff 180.00 scf sf
@@ -438,11 +477,26 @@ gs 1 -1 sc (LiveStatusReceiver) col0 sh gr
 2775 6525 m
 gs 1 -1 sc (OCC) col1 sh gr
 /Times-BoldItalic ff 180.00 scf sf
-6375 6300 m
-gs 1 -1 sc (TNCPROXY) col1 sh gr
-/Times-BoldItalic ff 180.00 scf sf
 10800 5250 m
 gs 1 -1 sc (TELESCOPE) col1 sh gr
+/Times-Bold ff 180.00 scf sf
+11175 9000 m
+gs 1 -1 sc (Seeing.dat) col0 sh gr
+/Times-Bold ff 180.00 scf sf
+9975 6150 m
+gs 1 -1 sc (write status to csv file) col0 sh gr
+/Times-Bold ff 180.00 scf sf
+5475 8700 m
+gs 1 -1 sc (/var/www/html/teldata) col0 sh gr
+/Times-BoldItalic ff 180.00 scf sf
+6075 3750 m
+gs 1 -1 sc (TMCPROXY) col1 sh gr
+/Times-Bold ff 180.00 scf sf
+5925 6975 m
+gs 1 -1 sc (telem_client) col-1 sh gr
+/Times-BoldItalic ff 180.00 scf sf
+7425 7350 m
+gs 1 -1 sc (LTPROXY) col1 sh gr
 % here ends figure;
 % 
 % here starts figure with depth 48
